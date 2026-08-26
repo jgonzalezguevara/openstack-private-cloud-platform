@@ -1,0 +1,12 @@
+---
+platform_management_interface: enp0s25
+platform_management_ipv4: 192.0.2.10
+platform_management_network: 192.0.2.0/24
+platform_default_gateway: 192.0.2.1
+
+platform_tailscale_enabled: true
+platform_tailscale_ipv4: 100.64.0.10
+
+platform_os_family: Ubuntu
+platform_os_release: "24.04"
+platform_architecture: x86_64

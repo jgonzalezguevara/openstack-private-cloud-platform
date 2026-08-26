@@ -1,0 +1,30 @@
+---
+- name: Validate OpenStack management node
+  hosts: management
+  gather_facts: true
+
+  tasks:
+    - name: Display management node information
+      ansible.builtin.debug:
+        msg:
+          - "Host: {{ inventory_hostname }}"
+          - "OS: {{ ansible_distribution }} {{ ansible_distribution_version }}"
+          - "Architecture: {{ ansible_architecture }}"
+          - "CPUs: {{ ansible_processor_vcpus }}"
+          - "Memory: {{ ansible_memtotal_mb }} MiB"
+          - "Management IP: {{ platform_management_ipv4 }}"
+          - "Management interface: {{ platform_management_interface }}"
+
+    - name: Validate management interface
+      ansible.builtin.assert:
+        that:
+          - platform_management_interface in ansible_interfaces
+        fail_msg: "Management interface {{ platform_management_interface }} was not detected."
+        success_msg: "Management interface {{ platform_management_interface }} detected."
+
+    - name: Validate minimum memory for management role
+      ansible.builtin.assert:
+        that:
+          - ansible_memtotal_mb >= 2048
+        fail_msg: "Management node has less than 2 GiB RAM."
+        success_msg: "Management node memory is sufficient."

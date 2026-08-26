@@ -1,0 +1,20 @@
+---
+all:
+  children:
+
+    management:
+      hosts:
+        homeserver:
+          ansible_host: 192.0.2.10
+          ansible_connection: local
+
+    openstack:
+      children:
+        controllers:
+          hosts: {}
+
+        computes:
+          hosts: {}
+
+        storage:
+          hosts: {}

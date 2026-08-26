@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Ansible
+*.retry
+
+# OpenTofu / Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+
+# OpenStack credentials
+clouds.yaml
+secure.yaml
+openrc
+*-openrc.sh
+
+# Kolla secrets
+passwords.yml
+
+# Environment
+.env
+.env.*
+
+# SSH / certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+tmp/
+*.tmp

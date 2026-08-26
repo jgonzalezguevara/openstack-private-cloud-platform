@@ -1,0 +1,16 @@
+---
+kolla_base_distro: "ubuntu"
+
+network_interface: "REPLACE_ME"
+neutron_external_interface: "REPLACE_ME"
+
+enable_haproxy: "yes"
+enable_horizon: "yes"
+enable_cinder: "yes"
+
+neutron_plugin_agent: "ovn"
+
+nova_compute_virt_type: "kvm"
+
+enable_prometheus: "yes"
+enable_grafana: "yes"

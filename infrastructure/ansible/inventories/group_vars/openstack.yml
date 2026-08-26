@@ -1,0 +1,14 @@
+---
+openstack_deployment: kolla-ansible
+
+openstack_network_backend: ovn
+openstack_compute_backend: kvm
+
+openstack_services:
+  - keystone
+  - glance
+  - nova
+  - placement
+  - neutron
+  - horizon
+  - cinder
