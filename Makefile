@@ -21,5 +21,5 @@ validate-kolla:
 
 inventory:
 	@ansible-inventory \
-		-i infrastructure/ansible/inventories/homelab.yml \
+		-i infrastructure/ansible/inventories/platform.yml \
 		--graph

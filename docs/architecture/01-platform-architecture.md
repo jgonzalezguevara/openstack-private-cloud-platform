@@ -4,7 +4,7 @@
 
 This project implements a production-inspired private cloud platform based on OpenStack.
 
-The architecture separates the management and automation layer from the OpenStack infrastructure itself. This allows the platform to evolve from a compact homelab deployment into a multi-node private cloud without redesigning the automation model.
+The architecture separates the management and automation layer from the OpenStack infrastructure itself. This allows the platform to evolve from a compact private cloud deployment into a multi-node private cloud without redesigning the automation model.
 
 ## Architecture
 
@@ -165,4 +165,4 @@ flowchart LR
 4. Credentials and secrets must never be stored in Git.
 5. Components should be replaceable and scalable.
 6. Deployment and operational procedures must be documented.
-7. The platform must demonstrate real operational workflows rather than only installation procedures.
+7. The platform must support real operational workflows rather than only installation procedures.

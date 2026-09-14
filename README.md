@@ -14,7 +14,7 @@ This project implements a complete private cloud platform designed around OpenSt
 
 The objective is not simply to install OpenStack, but to build a reproducible platform capable of provisioning compute, networking, storage and complete application environments through Infrastructure as Code and automation.
 
-The platform is designed to evolve from a compact homelab deployment into a multi-node private cloud without changing the operational model.
+The platform is designed to evolve from a compact private cloud deployment into a multi-node private cloud without changing the operational model.
 
 ## Architecture
 
@@ -64,7 +64,7 @@ Detailed architecture:
 
 ## Platform Capabilities
 
-The project is designed to demonstrate the complete lifecycle of a private cloud platform:
+The project is designed to cover the complete lifecycle of a private cloud platform:
 
 - Automated OpenStack deployment.
 - Reproducible cloud infrastructure.
